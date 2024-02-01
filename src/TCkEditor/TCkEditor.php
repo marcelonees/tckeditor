@@ -1,6 +1,6 @@
 <?php
 
-namespace MarceloNees\tckeditoradianti\TCkEditor;
+namespace MarceloNees\TCkEditorAdianti\TCkEditor;
 
 use Adianti\Core\AdiantiApplicationConfig;
 use Adianti\Widget\Form\AdiantiWidgetInterface;
