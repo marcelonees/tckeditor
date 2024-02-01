@@ -1,0 +1,18 @@
+{
+    "name": "marcelonees/tckeditoradianti",
+    "description": "TCkEditor for Adianti Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcelo Barreto Nees",
+            "email": "marcelo.linux@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MarceloNees\\tckeditoradianti\\": "src"
+        }
+    }
+}
