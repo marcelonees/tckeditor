@@ -20,7 +20,7 @@ composer require marcelonees/tckeditor dev-master
 Uso:
 
 ```php
-use MarceloNees\TCkEditorAdianti\TCkEditor;
+use MarceloNees\CkEditor\TCkEditor;
 $editor = new TCkEditor('editor');
 ```
 
