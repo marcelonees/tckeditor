@@ -20,11 +20,8 @@ composer require marcelonees/tckeditor dev-main
 Uso:
 
 ```php
-
 use MarceloNees\TCkEditorAdianti\TCkEditor;
-
 $editor = new TCkEditor('editor');
-
 ```
 
 # Este projeto está em estágio "embrionário".
