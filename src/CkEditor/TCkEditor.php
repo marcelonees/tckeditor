@@ -1,6 +1,6 @@
 <?php
 
-namespace MarceloNees\TCkEditorAdianti\TCkEditor;
+namespace MarceloNees\CkEditor\TCkEditor;
 
 use Adianti\Core\AdiantiApplicationConfig;
 use Adianti\Widget\Form\AdiantiWidgetInterface;
@@ -190,9 +190,9 @@ class TCkEditor extends TField implements AdiantiWidgetInterface
      */
     public function show()
     {
-        $this->tag->{'id'} = $this->id;
-        $this->tag->{'class'}  = 'thtmleditor';       // CSS
-        $this->tag->{'name'}   = $this->name;   // tag name
+        $this->tag->{'id'}      = $this->id;
+        $this->tag->{'class'}   = 'tckeditor';   // CSS
+        $this->tag->{'name'}    = $this->name;   // tag name
 
         $ini = AdiantiApplicationConfig::get();
         $locale = !empty($ini['general']['locale']) ? $ini['general']['locale'] : 'pt-BR';
@@ -221,11 +221,13 @@ class TCkEditor extends TField implements AdiantiWidgetInterface
 
 
         TScript::create("
-            $.getScript('vendor/marcelonees/tckeditoradianti/src/TCkEditor/ckeditor.js', {'crossOrigin': 'anonymous', 'crossDomain': 'true',}).done(function(s, Status) {
+            console.log('Loading ckeditor...');
+            $.getScript('vendor/marcelonees/tckeditor/src/TCkEditor/ckeditor.js', {'crossOrigin': 'anonymous', 'crossDomain': 'true',}).done(function(s, Status) {
+                console.log('ckeditor script loaded');
                 ClassicEditor
                     .create( document.querySelector( '#{$this->id}' ) )
                     .catch( error => {
-                        console.error( error );
+                        console.error(error);
                     } 
                 );
             }

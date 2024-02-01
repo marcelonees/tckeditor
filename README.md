@@ -14,7 +14,7 @@ Instalação:
 ```bash
 composer config repositories.tckeditor vcs https://github.com/marcelonees/tckeditor
 composer require marcelonees/tckeditor @dev
-composer require marcelonees/tckeditor dev-main
+composer require marcelonees/tckeditor dev-master
 ```
 
 Uso:
