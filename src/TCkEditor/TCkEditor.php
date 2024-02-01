@@ -44,7 +44,7 @@ class TCkEditor extends TField implements AdiantiWidgetInterface
         $this->tag->{'widget'} = 'TCkEditor';
 
         // TStyle::importFromFile('vendor/marcelonees/tckeditoradianti/src/TCkEditor/content.min.css');
-        TScript::importFromFile('vendor/marcelonees/tckeditoradianti/src/TCkEditor/ckeditor.js');
+        TScript::importFromFile('vendor/marcelonees/tckeditor/src/TCkEditor/ckeditor.js');
 
         // TScript::create("
         //     tinymce.init({

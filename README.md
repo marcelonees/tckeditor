@@ -12,9 +12,9 @@ Site do fabricante [CkEditor](https://github.com/ckeditor/).
 Instalação:
 
 ```bash
-composer config repositories.tckeditoradianti vcs https://github.com/marcelonees/tckeditor
-composer require marcelonees/tckeditoradianti @dev
-composer require marcelonees/tckeditoradianti dev-main
+composer config repositories.tckeditor vcs https://github.com/marcelonees/tckeditor
+composer require marcelonees/tckeditor @dev
+composer require marcelonees/tckeditor dev-main
 ```
 
 Uso:
